@@ -1,0 +1,128 @@
+/* General styling */
+html, body {
+    margin: 8px 30px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-img {
+    max-width: 38px;
+    height: 38px;
+}
+
+.back-to-search {
+    text-decoration: none;
+    font-size: 14px;
+    color: #1A1A1A;
+    font-weight: 700;
+    background-color: #E5E5E5;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.back-to-search:hover {
+    background-color: #ccc;
+}
+
+/* Main section */
+.main-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Watchlist content */
+.watchlist-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Movie section */
+.movie-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.movie-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.movie-title-and-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.movie-title-and-btn h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+}
+
+/* Remove button */
+.remove-movie-btn {
+    font-size: 16px;
+    color: white;
+    background-color: #d9534f;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.remove-movie-btn:hover {
+    background-color: #c9302c;
+}
+
+.movie-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.movie-text p strong {
+    color: #333;
+}

@@ -1,0 +1,195 @@
+html, body {
+    margin: 8px 30px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.headers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-img {
+    max-width: 38px;
+    height: 38px;
+}
+
+.watchlist-link{
+    outline: none;
+    text-decoration: none;
+    color: #1A1A1A;
+
+}
+
+/* Search Section */
+.search-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    border: none;
+    background-color: #E5E5E5;
+    padding: 5px 15px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.search-bar {
+    font-family: inherit;
+    flex: 1;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: none;
+    margin-left: 10px;
+}
+
+.search-bar::placeholder {
+    font-size: 15px;
+}
+
+.search-bar:focus {
+    outline: none; /* Entfernt die blaue Umrandung */
+    box-shadow: none; /* Entfernt eventuelle Schatten-Effekte */
+    border: none; /* Optional: Anpassung des Rahmens */
+}
+
+.search-icon {
+    width: 25px;
+    height: auto;
+}
+
+
+/* Main Section */
+.main-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Styling Start Screen */
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+}
+
+#start-img {
+    width: 10%;
+    height: auto;
+}
+
+#start-text {
+    font-size: 12px;
+    color: #E5E5E5;
+}
+
+
+/* Hauptbereich für Filme */
+#main-section {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column; /* Filme untereinander anordnen */
+    gap: 20px; /* Abstand zwischen den Filmen */
+    align-items: stretch; /* Filme über die gesamte Breite strecken */
+}
+
+/* Einzelner Filmabschnitt */
+.movie-section {
+    display: flex;
+    align-items: flex-start; /* Bilder und Texte vertikal ausrichten */
+    gap: 20px; /* Abstand zwischen Bild und Text */
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5; /* Linie zwischen den Filmen */
+}
+
+/* Bild des Films */
+.movie-image {
+    width: 200px; /* Einheitliche Bildgröße */
+    height: auto;
+    border-radius: 8px; /* Abgerundete Ecken */
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Schatten */
+}
+
+/* Textbereich des Films */
+.movie-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;/* Gleicher Abstand zwischen Blöcken */
+    flex: 1; /* Textblock nimmt den restlichen Platz ein */
+}
+
+/* Titel und Button */
+.movie-title-and-btn {
+    display: flex;
+    justify-content: space-between; /* Titel links, Button rechts */
+    align-items: center; /* Vertikal zentrieren */
+    gap: 10px;
+}
+
+/* Titel */
+.movie-title-and-btn h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+}
+
+/* Add-Button */
+.add-movie-btn {
+    font-size: 20px;
+    color: #333;
+    background-color: #e5e5e5;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-movie-btn:hover {
+    background-color: #ccc;
+}
+
+/* Details wie Jahr und Typ */
+.movie-text p {
+    margin: 0; /* Einheitlicher Abstand zwischen Details */
+    font-size: 14px;
+    color: #666;
+}
+
+.movie-text p strong {
+    color: #333;
+}
+
+/* Sterne-Bewertung */
+.movie-rating {
+    font-size: 14px;
+    color: #f5c518; /* Gelbe Sternfarbe */
+}
