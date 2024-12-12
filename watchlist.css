@@ -6,6 +6,13 @@ html, body {
     font-style: normal;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
 /* Header section */
 header {
     display: flex;
@@ -70,6 +77,7 @@ h1 {
     gap: 20px;
     padding: 20px 0;
     border-bottom: 1px solid #e5e5e5;
+    flex-wrap: wrap;
 }
 
 .movie-image {
@@ -126,3 +134,53 @@ h1 {
 .movie-text p strong {
     color: #333;
 }
+
+
+/* Responsivität */
+@media (max-width: 768px) {
+    .movie-section {
+        flex-direction: column; /* Auf kleineren Bildschirmen Filme vertikal anzeigen */
+        align-items: center;
+        text-align: center;
+    }
+
+    .movie-image {
+        width: 100%; /* Bild auf volle Breite setzen */
+        max-width: 300px; /* Maximale Breite des Bildes */
+    }
+
+    .movie-title-and-btn {
+        flex-direction: column; /* Titel und Button untereinander setzen */
+        gap: 10px;
+    }
+
+    .movie-text p {
+        font-size: 12px; /* Kleinere Schriftgröße für Details */
+    }
+
+    .remove-movie-btn {
+        padding: 10px 20px; /* Größere Buttons auf Mobilgeräten */
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Header-Elemente vertikal auf Mobilgeräten */
+        gap: 10px;
+    }
+
+    .watchlist-link {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .movie-title-and-btn h2 {
+        font-size: 16px; /* Kleinere Schrift für Titel */
+    }
+
+    .movie-text p {
+        font-size: 11px;
+    }
+}
+

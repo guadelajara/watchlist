@@ -3,6 +3,13 @@ html, body {
     font-family: "Kanit", sans-serif;
     font-weight: 700;
     font-style: normal;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 /* Header Section */
@@ -122,6 +129,7 @@ header {
     gap: 20px; /* Abstand zwischen Bild und Text */
     padding: 20px 0;
     border-bottom: 1px solid #e5e5e5; /* Linie zwischen den Filmen */
+    flex-wrap: wrap;
 }
 
 /* Bild des Films */
@@ -192,4 +200,45 @@ header {
 .movie-rating {
     font-size: 14px;
     color: #f5c518; /* Gelbe Sternfarbe */
+}
+
+
+
+
+/* Responsivität */
+@media (max-width: 768px) {
+    .movie-section {
+        flex-direction: column; /* Auf kleineren Bildschirmen Filme vertikal anzeigen */
+        align-items: center;
+        text-align: center;
+    }
+
+    .movie-image {
+        width: 100%; /* Bild auf volle Breite setzen */
+        max-width: 300px; /* Maximale Breite des Bildes */
+    }
+
+    .movie-title-and-btn {
+        flex-direction: column; /* Titel und Button untereinander setzen */
+        gap: 10px;
+    }
+
+    .movie-text p {
+        font-size: 12px; /* Kleinere Schriftgröße für Details */
+    }
+}
+
+@media (max-width: 480px) {
+    .search-wrapper {
+        max-width: 100%; /* Suchleiste nimmt den gesamten Platz ein */
+        padding: 5px;
+    }
+
+    .search-bar {
+        font-size: 14px;
+    }
+
+    .movie-title-and-btn h2 {
+        font-size: 16px; /* Kleinere Schrift für Titel */
+    }
 }
